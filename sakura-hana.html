@@ -6,24 +6,22 @@
 <title>Sakura Hana — Meyzsa &amp; Fahrezzi | Sabtu 12 Juni 2027</title>
 <meta name="description" content="Undangan pernikahan digital bertema hanami di taman sakura Jepang: Sakura Hana — Meyzsa & Fahrezzi, Sabtu 12 Juni 2027, Jakarta.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23fff3f6'/%3E%3Cg fill='%23e77a9b'%3E%3Ccircle cx='16' cy='10' r='5'/%3E%3Ccircle cx='10' cy='15' r='5'/%3E%3Ccircle cx='22' cy='15' r='5'/%3E%3Ccircle cx='12.5' cy='21.5' r='5'/%3E%3Ccircle cx='19.5' cy='21.5' r='5'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='3' fill='%23c93e4e'/%3E%3C/svg%3E">
-<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/sakura-hana/font-script.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/sakura-hana/font-hero-display.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="assets/undangya/sakura-hana/font-hero-kicker.woff2">
 <style>
-@font-face{font-family:'Great Vibes';src:url('assets/undangya/sakura-hana/font-script.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'Sakura Display';src:url('assets/undangya/sakura-hana/font-hero-display.woff2') format('woff2');font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:'Sakura Kicker';src:url('assets/undangya/sakura-hana/font-hero-kicker.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
 :root{--pink:#e77a9b;--pink-l:#f6c3d5;--torii:#c0392b;--torii2:#c93e4e;--wood:#3e2a20;--ink:#472233;--ink2:#6d4356;--paper:#fffaf0;--line:rgba(201,62,78,.35)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{background:#1d1420;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
-.serif{font-family:Georgia,'Times New Roman',serif}.script{font-family:'Great Vibes',cursive}
+.serif{font-family:Georgia,'Times New Roman',serif}.script{font-family:'Sakura Display',Georgia,serif}
 .phone{max-width:430px;margin:0 auto;position:relative;min-height:100dvh;overflow:clip;box-shadow:0 0 90px rgba(0,0,0,.8);background:#f7e8ee}
-.world-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
-.world-bg .wb-sticky{position:sticky;top:0;height:100dvh;overflow:hidden}
-.world-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
-.world-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(253,238,243,.28),rgba(253,238,243,.5) 40%,rgba(240,226,235,.6))}
 main,footer{position:relative;z-index:1}
 img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
-.sway-g{transform-origin:50% 0;animation:swayG var(--sd,8.4s) cubic-bezier(.37,0,.63,1) infinite alternate}
+.sway-g{transform-origin:50% 0;animation:swayG var(--sd,4.2s) cubic-bezier(.37,.02,.63,.98) infinite alternate}
 @keyframes swayG{from{transform:rotate(calc(var(--sa,2.4deg)*-1))}to{transform:rotate(var(--sa,2.4deg))}}
-.sway-t{transform-origin:50% 100%;animation:swayT var(--sd,8.8s) cubic-bezier(.37,0,.63,1) infinite alternate}
+.sway-t{transform-origin:50% 100%;animation:swayT var(--sd,4.4s) cubic-bezier(.37,.02,.63,.98) infinite alternate}
 @keyframes swayT{from{transform:rotate(calc(var(--sa,2deg)*-1))}to{transform:rotate(var(--sa,2deg))}}
 #cover{position:relative;height:100dvh;min-height:640px;overflow:hidden;background:#f3d9e2;z-index:2}
 .scene{position:absolute;inset:0;animation:dolly 3.2s cubic-bezier(.22,.8,.3,1) both}
@@ -33,14 +31,19 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes fadeUp{from{opacity:0}to{opacity:1}}
 .branch-tl{left:-14%;top:-4%;width:62%}.branch-tr{right:-14%;top:-4%;width:62%}
-.fg-tree{bottom:10%;width:35%}
+.fg-tree{bottom:13.4%;width:35%}
 .sun-shimmer{position:absolute;top:5%;left:50%;width:340px;height:340px;margin-left:-170px;background:radial-gradient(circle,rgba(255,236,170,.55),rgba(255,236,170,0) 65%);animation:shimmer 5.5s ease-in-out infinite alternate;pointer-events:none;z-index:3}
 @keyframes shimmer{from{opacity:.45;transform:scale(.92)}to{opacity:.95;transform:scale(1.08)}}
 .bridge-foot{position:absolute;left:3%;right:3%;bottom:10.5%;z-index:4;pointer-events:none}
 .pond{position:absolute;left:0;right:0;bottom:0;height:13%;background:linear-gradient(180deg,rgba(140,180,210,.5),rgba(90,140,180,.72));z-index:3;overflow:hidden}
 .ripple{position:absolute;border:2px solid rgba(255,255,255,.75);border-radius:50%;animation:ripple 4.6s ease-out infinite;width:64px;height:22px}
+.koi{position:absolute;pointer-events:none;opacity:.94}
+.koi-a{width:58px;animation:koiSwimA 7.5s ease-in-out infinite alternate}
+.koi-b{width:46px;animation:koiSwimB 8.6s ease-in-out infinite alternate}
+@keyframes koiSwimA{from{transform:rotate(63deg) translateX(-5px)}to{transform:rotate(70deg) translateX(6px)}}
+@keyframes koiSwimB{from{transform:rotate(-38deg) scaleX(-1) translateX(-4px)}to{transform:rotate(-31deg) scaleX(-1) translateX(5px)}}
 @keyframes ripple{0%{transform:scale(.3);opacity:.9}100%{transform:scale(1.7);opacity:0}}
-.lantern-h{position:absolute;top:15%;width:42px;z-index:5}
+.lantern-h{position:absolute;top:13.5%;width:56px;z-index:5}
 .petal-field{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:6}
 .petal-fall{position:absolute;top:-6%;pointer-events:none;opacity:0;animation:petalFall var(--pf,11s) linear infinite;animation-delay:var(--pdl,0s)}
 @keyframes petalFall{0%{transform:translate3d(0,0,0) rotate(0deg);opacity:0}8%{opacity:.95}50%{transform:translate3d(var(--sw,26px),54vh,0) rotate(190deg)}92%{opacity:.9}100%{transform:translate3d(calc(var(--sw,26px)*-.6),108vh,0) rotate(360deg);opacity:0}}
@@ -53,10 +56,10 @@ body.opening .burst i{animation:burstFly 1.5s cubic-bezier(.17,.67,.3,1) both;an
 @keyframes burstFly{0%{transform:translate(0,0) rotate(0) scale(.5);opacity:0}12%{opacity:1}100%{transform:translate(var(--bx),var(--by)) rotate(var(--br)) scale(1.1);opacity:0}}
 .cover-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(71,34,51,.16) 0%,transparent 30%,transparent 50%,rgba(71,34,51,.28) 100%);z-index:4;pointer-events:none}
 .cover-ui{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;text-align:center;padding:24px 26px 30px}
-.cover-kicker{margin-top:14%;font-size:11.5px;font-weight:700;letter-spacing:.4em;color:#5b2138;background:rgba(255,250,240,.94);padding:7px 16px 7px 20px;border-radius:999px;border:2px solid var(--wood);box-shadow:0 6px 18px rgba(90,30,50,.25);animation:fadeUp 1s 2.4s ease both,kickGlow 3.6s ease-in-out 3.6s infinite alternate}
+.cover-kicker{font-family:'Sakura Kicker',Georgia,serif;margin-top:14%;font-size:12px;font-weight:700;letter-spacing:.4em;color:#5b2138;background:rgba(255,250,240,.94);padding:7px 16px 7px 20px;border-radius:999px;border:2px solid var(--wood);box-shadow:0 6px 18px rgba(90,30,50,.25);animation:fadeUp 1s 2.4s ease both,kickGlow 3.6s ease-in-out 3.6s infinite alternate}
 @keyframes kickGlow{from{box-shadow:0 6px 18px rgba(90,30,50,.22)}to{box-shadow:0 6px 24px rgba(201,62,78,.45)}}
-.cover-names{font-family:'Great Vibes',cursive;font-weight:400;margin-top:14px;font-size:62px;line-height:1.12;color:#6e1f38;text-shadow:0 1px 0 rgba(255,255,255,.9),0 2px 18px rgba(255,250,246,.95);animation:fadeUp 1.1s 2.7s ease both}
-.cover-names .nm-line{display:block}.cover-names .amp{display:block;font-size:32px;line-height:.95;margin:-4px 0 -8px;color:var(--torii2)}
+.cover-names{font-family:'Sakura Display',Georgia,serif;font-weight:800;margin-top:16px;font-size:46px;line-height:1.3;letter-spacing:.015em;color:#6e1f38;text-shadow:0 1px 0 rgba(255,255,255,.9),0 2px 18px rgba(255,250,246,.95);animation:fadeUp 1.1s 2.7s ease both}
+.cover-names .nm-line{display:block}.cover-names .amp{display:block;font-size:27px;line-height:.95;margin:-4px 0 -8px;color:var(--torii2)}
 .cover-date{margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.26em;color:#fff;background:linear-gradient(135deg,#a02c3e,#c93e4e 55%,#a02c3e);padding:7px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.75);box-shadow:0 8px 20px rgba(120,25,45,.4);animation:fadeUp 1s 3s ease both,datePulse 3.2s ease-in-out 4s infinite alternate}
 @keyframes datePulse{from{transform:scale(1)}to{transform:scale(1.035)}}
 .cover-spacer{flex:1}
@@ -68,20 +71,32 @@ body.opening .burst i{animation:burstFly 1.5s cubic-bezier(.17,.67,.3,1) both;an
 body.opening #cover{animation:pushZoom 1.15s cubic-bezier(.6,0,.8,.4) 1.35s both}
 @keyframes pushZoom{to{transform:scale(1.45);opacity:0}}
 #content{display:none}body.opened #content{display:block}
-section{position:relative;padding:54px 24px}
+section{position:relative;padding:54px 24px;background-color:#f8ecf1;background-image:linear-gradient(rgba(248,236,241,.58),rgba(248,236,241,.58)),var(--secbg-img,none);background-size:cover;background-position:center}
+#sambutan{--secbg-img:url('assets/undangya/sakura-hana/bg-sambutan.webp')}
+#mempelai{--secbg-img:url('assets/undangya/sakura-hana/bg-mempelai.webp')}
+#kisah{--secbg-img:url('assets/undangya/sakura-hana/bg-kisah.webp')}
+#acara{--secbg-img:url('assets/undangya/sakura-hana/bg-acara.webp')}
+#galeri{--secbg-img:url('assets/undangya/sakura-hana/bg-galeri.webp')}
+#cuplikan{--secbg-img:url('assets/undangya/sakura-hana/bg-cuplikan.webp')}
+#live{--secbg-img:url('assets/undangya/sakura-hana/bg-live.webp')}
+#rsvp{--secbg-img:url('assets/undangya/sakura-hana/bg-rsvp.webp')}
+#bukutamu{--secbg-img:url('assets/undangya/sakura-hana/bg-bukutamu.webp')}
+#amplop{--secbg-img:url('assets/undangya/sakura-hana/bg-amplop.webp')}
+#turut{--secbg-img:url('assets/undangya/sakura-hana/bg-turut.webp')}
+#penutup{--secbg-img:url('assets/undangya/sakura-hana/bg-world.webp')}
 .sec-head{text-align:center;margin-bottom:26px;position:relative;z-index:2}
 .sec-icon{width:54px;height:54px;margin:0 auto 10px;filter:drop-shadow(0 4px 10px rgba(120,40,60,.3))}
 .sec-kicker{font-size:10.5px;letter-spacing:.34em;color:#9c2b40;font-weight:800}
-.sec-title{font-family:Georgia,serif;font-size:28px;font-weight:700;color:var(--ink);margin-top:6px}
+.sec-title{font-family:'Sakura Display',Georgia,serif;font-size:27px;font-weight:800;color:var(--ink);margin-top:6px}
 .sec-sub{font-family:Georgia,serif;font-style:italic;font-size:16px;color:var(--ink2);margin-top:6px}
 .shoji-head{background:var(--paper);border:3px solid var(--wood);border-radius:6px;padding:22px 14px 18px;box-shadow:0 12px 28px rgba(62,42,32,.28);position:relative;overflow:hidden}
 .shoji-head::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 62px,rgba(62,42,32,.5) 62px 65px),repeating-linear-gradient(0deg,transparent 0 44px,rgba(62,42,32,.35) 44px 46px);pointer-events:none}
 .shoji-head>*{position:relative}
 .divider{width:120px;margin:14px auto 0}
 .branch-divider{display:flex;align-items:center;padding:2px 6px;position:relative;z-index:2}
-.branch-divider svg{width:180px;height:46px;flex:none}
-.branch-divider.from-left{justify-content:flex-start;transform-origin:0 50%;animation:swayT 9s cubic-bezier(.37,0,.63,1) infinite alternate}
-.branch-divider.from-right{justify-content:flex-end;transform-origin:100% 50%;animation:swayT 10.5s cubic-bezier(.37,0,.63,1) infinite alternate}
+.branch-divider .bd-branch{width:180px;height:46px;flex:none;object-fit:cover;object-position:50% 30%;border-radius:8px}
+.branch-divider.from-left{justify-content:flex-start;transform-origin:0 50%;animation:swayT 4.2s cubic-bezier(.37,.02,.63,.98) infinite alternate}
+.branch-divider.from-right{justify-content:flex-end;transform-origin:100% 50%;animation:swayT 4.8s cubic-bezier(.37,.02,.63,.98) infinite alternate}
 .bd-label{font-size:9.5px;letter-spacing:.26em;color:#7c2440;font-weight:800;background:rgba(255,250,240,.94);border:1px solid var(--wood);padding:4px 10px;border-radius:999px;margin:0 8px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px 22px;box-shadow:0 14px 32px rgba(120,50,70,.16);position:relative;z-index:2}
 .card::before{content:"";position:absolute;inset:7px;border:1px solid rgba(231,122,155,.35);border-radius:12px;pointer-events:none}
@@ -89,13 +104,15 @@ section{position:relative;padding:54px 24px}
 .orn{position:absolute;z-index:1;pointer-events:none;opacity:.95}
 .frame-wood{border-radius:14px;border:3px solid #a9744f;padding:7px;background:linear-gradient(160deg,#e9c39a,#c99a6b 55%,#e2b78b);box-shadow:0 16px 34px rgba(110,50,30,.3)}
 .frame-wood img{border-radius:8px;width:100%;height:100%;object-fit:cover}
-.cross-branch{width:100%;height:54px;margin-bottom:-14px;position:relative;z-index:3;transform-origin:50% 0;animation:swayG 9.5s cubic-bezier(.37,0,.63,1) infinite alternate}
+.shoji-door .frame-wood img{object-position:50% 2%}
+.hero-frame img{object-position:50% 20%}
+.cross-branch{width:100%;height:98px;margin-bottom:-26px;position:relative;z-index:3;transform-origin:50% 0;animation:swayG 3.7s cubic-bezier(.37,.02,.63,.98) infinite alternate;object-fit:cover;object-position:50% 42%}
 .shoji-couple{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative;z-index:2}
 .shoji-door{background:var(--paper);border:3px solid var(--wood);border-radius:6px;padding:14px 10px 16px;text-align:center;box-shadow:0 14px 30px rgba(62,42,32,.25);position:relative;overflow:hidden}
 .shoji-door::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 46px,rgba(62,42,32,.3) 46px 48px);pointer-events:none}
 .shoji-door>*{position:relative}
 .shoji-door .frame-wood{height:212px}
-.shoji-door h3{font-family:'Great Vibes',cursive;font-size:26px;color:#7c2440;margin-top:12px;font-weight:400;line-height:1.15}
+.shoji-door h3{font-family:'Sakura Display',Georgia,serif;font-size:18.5px;color:#7c2440;margin-top:12px;font-weight:800;line-height:1.32}
 .shoji-door .gelar{font-family:Georgia,serif;font-size:12px;color:var(--ink2)}
 .shoji-door p{font-size:11.5px;line-height:1.6;color:var(--ink2);margin-top:7px}
 .ig-btn{display:inline-block;margin-top:10px;padding:7px 13px;border-radius:999px;border:1px solid var(--torii2);color:#9c2b40;font-size:11px;font-weight:700;text-decoration:none;background:#fff}
@@ -114,8 +131,7 @@ section{position:relative;padding:54px 24px}
 .cd-medal b{display:block;font-family:Georgia,serif;font-size:24px;color:#9c2b40}
 .cd-medal span{font-size:9px;letter-spacing:.16em;color:var(--ink2);text-transform:uppercase;font-weight:700}
 .cd-medal b.pop{animation:cdpop .45s ease}@keyframes cdpop{40%{transform:scale(1.26);color:var(--torii)}}
-.fan-top{width:190px;height:95px;margin:0 auto -8px;background:repeating-conic-gradient(from -90deg at 50% 100%,#f6c3d5 0 10deg,#e77a9b 10deg 12deg,#f6c3d5 12deg 22deg);border:2.5px solid var(--wood);border-bottom:none;border-radius:190px 190px 0 0;position:relative;z-index:3;transform-origin:50% 100%;animation:fanSway 7s cubic-bezier(.37,0,.63,1) infinite alternate}
-@keyframes fanSway{from{transform:rotate(-2.4deg)}to{transform:rotate(2.4deg)}}
+.fan-top-img{display:block;width:196px;margin:0 auto -6px;position:relative;z-index:3}
 .event{margin-bottom:24px;text-align:center}
 .event h3{font-family:Georgia,serif;font-size:23px;margin:6px 0 4px;color:var(--ink)}
 .event .when{font-family:Georgia,serif;font-size:17px;color:#9c2b40;font-weight:700}
@@ -144,7 +160,7 @@ section{position:relative;padding:54px 24px}
 .emaki-wrap{position:relative;padding:0 22px;z-index:2}
 .emaki-rod{position:absolute;top:-6px;bottom:-6px;width:20px;z-index:4;object-fit:cover}
 .emaki-rod.left{left:0}.emaki-rod.right{right:0}
-.emaki-branch{position:absolute;top:-14px;left:26px;right:26px;height:30px;z-index:3;pointer-events:none;transform-origin:0 50%;animation:swayT 9s cubic-bezier(.37,0,.63,1) infinite alternate}
+.emaki-branch{position:absolute;top:-14px;left:26px;right:26px;height:30px;z-index:3;pointer-events:none;transform-origin:0 50%;animation:swayT 4.4s cubic-bezier(.37,.02,.63,.98) infinite alternate;object-fit:cover;object-position:50% 30%}
 .emaki-rail{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;cursor:grab;background:linear-gradient(180deg,#fffaf0,#fdf0e6);border-top:3px solid var(--wood);border-bottom:3px solid var(--wood);padding:18px 0 14px}
 .emaki-rail::-webkit-scrollbar{display:none}
 .emaki-rail.dragging{cursor:grabbing;scroll-snap-type:none}
@@ -172,7 +188,8 @@ section{position:relative;padding:54px 24px}
 .gb-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 15px;text-align:left}
 .gb-item b{font-size:13.5px;color:var(--ink)}.gb-item .st{font-size:10.5px;color:#9c2b40;font-weight:800;margin-left:6px}.gb-item p{font-size:13px;color:var(--ink2);line-height:1.55;margin-top:3px}
 .postcard{background:var(--paper);border:2px solid var(--wood);border-radius:8px;padding:22px 20px;box-shadow:0 14px 32px rgba(62,42,32,.22);position:relative;z-index:2;background-image:repeating-linear-gradient(0deg,transparent 0 30px,rgba(62,42,32,.07) 30px 31px)}
-.postcard .stamp{position:absolute;top:14px;right:14px;width:52px;transform:rotate(4deg)}
+.postcard .stamp{position:absolute;top:12px;right:12px;width:46px;transform:rotate(4deg)}
+.postcard form{margin-top:34px}
 .postcard .addr-lines{border-top:1.5px dashed rgba(62,42,32,.4);margin-top:16px;padding-top:12px;font-size:12px;color:var(--ink2);line-height:1.9}
 .acc-card{text-align:center;margin-bottom:18px}
 .acc-card .bank{font-family:Georgia,serif;font-weight:700;font-size:19px;letter-spacing:.1em;color:#9c2b40}
@@ -193,7 +210,7 @@ section{position:relative;padding:54px 24px}
 .gt-up{display:inline-block;cursor:pointer;margin-top:14px}
 .turut-grid{display:grid;gap:14px;position:relative;z-index:2}
 .turut-card{text-align:center}.turut-card h4{font-family:Georgia,serif;font-size:16.5px;margin-bottom:6px;color:var(--ink)}.turut-card p{font-size:13px;line-height:1.85}
-.penutup-names{font-size:44px;color:#7c2440;line-height:1.2}
+.penutup-names{font-family:'Sakura Display',Georgia,serif;font-size:33px;font-weight:800;color:#7c2440;line-height:1.25}
 .foot-note{text-align:center;font-size:11px;color:#5b3444;padding:0 40px 110px;line-height:1.7;position:relative;z-index:2;background:rgba(255,250,240,.8)}
 #btnMusic{position:fixed;right:calc(50% - 215px + 14px);bottom:86px;z-index:70;width:50px;height:50px;border-radius:50%;border:1px solid #ffd9e2;background:radial-gradient(circle at 32% 28%,#d6506b,#8e2438 72%);box-shadow:0 10px 24px rgba(120,25,45,.5);display:none;align-items:center;justify-content:center}
 body.opened #btnMusic{display:flex}
@@ -227,26 +244,25 @@ body.opened #btnMusic{display:flex}
 </head>
 <body>
 <div class="phone">
-<div class="world-bg" aria-hidden="true"><div class="wb-sticky"><img src="assets/undangya/sakura-hana/bg-world.webp" alt=""></div></div>
 
 <header id="cover" aria-label="Sampul undangan Sakura Hana">
   <div class="scene">
     <img data-deco class="lyr lyr-world" src="assets/undangya/sakura-hana/cover-bg.webp" alt="Lukisan taman sakura: pohon sakura besar berbunga lebat utuh, jembatan merah melengkung di atas kolam, dan lentera batu">
     <div data-deco class="sun-shimmer" aria-hidden="true"></div>
-    <img data-deco class="lyr branch-tl sway-g" style="--sa:2.6deg;--sd:8.6s" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="">
-    <img data-deco class="lyr branch-tr sway-g" style="--sa:2.2deg;--sd:9.4s" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="">
-    <img data-deco class="lyr fg-tree sway-t" style="--sa:1.5deg;--sd:9.8s;left:-7%" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
-    <img data-deco class="lyr fg-tree sway-t" style="--sa:1.8deg;--sd:8.9s;right:-7%" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
-    <img data-deco class="lantern-h sway-g" style="--sa:3deg;--sd:7.5s;left:6%" src="assets/undangya/sakura-hana/sh-lentera-taman.webp" alt="">
-    <img data-deco class="lantern-h sway-g" style="--sa:2.6deg;--sd:8.2s;right:6%" src="assets/undangya/sakura-hana/sh-lentera-taman.webp" alt="">
-    <img data-deco class="lyr sway-t" style="--sa:1.6deg;--sd:9.2s;left:1%;bottom:12%;width:16%" src="assets/undangya/sakura-hana/bambu.webp" alt="">
-    <img data-deco class="lyr sway-t" style="--sa:1.9deg;--sd:8.7s;right:1%;bottom:12%;width:16%" src="assets/undangya/sakura-hana/bambu.webp" alt="">
+    <img data-deco class="lyr branch-tl sway-g" style="--sa:2.6deg;--sd:3.4s" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="">
+    <img data-deco class="lyr branch-tr sway-g" style="--sa:2.2deg;--sd:4.1s" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="">
+    <img data-deco class="lyr fg-tree sway-t" style="--sa:1.5deg;--sd:4.6s;left:-7%" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
+    <img data-deco class="lyr fg-tree sway-t" style="--sa:1.8deg;--sd:3.8s;right:-7%" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
+    <img data-deco class="lantern-h sway-g" style="--sa:3deg;--sd:2.9s;left:5%" src="assets/undangya/sakura-hana/sakura-lentera-gantung.webp" alt="">
+    <img data-deco class="lantern-h sway-g" style="--sa:2.6deg;--sd:3.6s;right:5%" src="assets/undangya/sakura-hana/sakura-lentera-gantung.webp" alt="">
+    <img data-deco class="lyr sway-t" style="--sa:1.6deg;--sd:4.9s;left:1%;bottom:12%;width:16%" src="assets/undangya/sakura-hana/bambu.webp" alt="">
+    <img data-deco class="lyr sway-t" style="--sa:1.9deg;--sd:4.3s;right:1%;bottom:12%;width:16%" src="assets/undangya/sakura-hana/bambu.webp" alt="">
     <div class="pond" aria-hidden="true">
       <span data-deco class="ripple" style="left:12%;top:22%;animation-delay:0s"></span>
       <span data-deco class="ripple" style="left:58%;top:36%;animation-delay:1.4s"></span>
       <span data-deco class="ripple" style="left:80%;top:14%;animation-delay:2.6s"></span>
-      <svg data-deco style="position:absolute;left:16%;top:18%" width="44" height="24" viewBox="0 0 44 24" aria-hidden="true"><ellipse cx="16" cy="13" rx="12" ry="7" fill="#e2703a"/><ellipse cx="32" cy="9" rx="9" ry="5.5" fill="#f2a03d" transform="rotate(-18 32 9)"/><circle cx="10" cy="11" r="1.6" fill="#472233"/></svg>
-      <svg data-deco style="position:absolute;right:14%;top:42%" width="36" height="20" viewBox="0 0 44 24" aria-hidden="true"><ellipse cx="16" cy="13" rx="12" ry="7" fill="#f2a03d"/><ellipse cx="32" cy="9" rx="9" ry="5.5" fill="#e2703a" transform="rotate(-18 32 9)"/><circle cx="10" cy="11" r="1.6" fill="#472233"/></svg>
+      <img data-deco class="koi koi-a" style="left:13%;top:6%" src="assets/undangya/sakura-hana/sakura-koi.webp" alt="">
+      <img data-deco class="koi koi-b" style="right:12%;top:34%" src="assets/undangya/sakura-hana/sakura-koi.webp" alt="">
     </div>
     <img data-deco class="bridge-foot" src="assets/undangya/sakura-hana/sh-jembatan-taiko.webp" alt="">
     <div class="petal-field" aria-hidden="true">
@@ -292,11 +308,11 @@ body.opened #btnMusic{display:flex}
       <p class="serif" style="font-size:18.5px;line-height:1.75;font-style:italic;color:var(--ink)">“Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan pasangan-pasangan untukmu agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.”</p>
       <p style="margin-top:12px;font-size:12px;letter-spacing:.22em;color:#9c2b40;font-weight:800">QS. AR-RUM : 21</p>
       <p style="margin-top:16px;font-size:14px;line-height:1.75">Seperti kelopak sakura yang bermekaran di musim semi, dua hati yang dipertemukan kini hendak mekar bersama. Dengan penuh syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberi doa restu pada hari bahagia kami.</p>
-      <svg width="150" height="34" viewBox="0 0 150 34" style="margin:16px auto 0" aria-hidden="true"><ellipse cx="40" cy="18" rx="34" ry="10" fill="none" stroke="#7aa7c7" stroke-width="2" opacity=".7"/><ellipse cx="105" cy="20" rx="26" ry="8" fill="none" stroke="#7aa7c7" stroke-width="2" opacity=".5"/><ellipse cx="40" cy="18" rx="10" ry="4" fill="#e2703a"/></svg>
+      <div aria-hidden="true" style="display:flex;gap:16px;justify-content:center;margin:16px auto 0"><img src="assets/undangya/sakura-hana/sakura-koi.webp" alt="" style="width:37px;height:auto;transform:rotate(82deg)"><img src="assets/undangya/sakura-hana/sakura-koi.webp" alt="" style="width:31px;height:auto;transform:rotate(96deg) scaleX(-1)"></div>
     </div>
   </section>
 
-  <div class="branch-divider from-left" aria-hidden="true"><svg viewBox="0 0 180 46"><path d="M2 40 Q70 6 178 22" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="52" cy="22" r="9"/><circle cx="78" cy="14" r="11"/><circle cx="112" cy="16" r="9"/><circle cx="142" cy="20" r="10"/></g><circle cx="78" cy="14" r="4" fill="#c93e4e"/></svg><span class="bd-label">HANAMI · 01</span></div>
+  <div class="branch-divider from-left" aria-hidden="true"><img class="bd-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""><span class="bd-label">HANAMI · 01</span></div>
 
   <section id="mempelai">
     <div class="sec-head rv rv-up shoji-head">
@@ -305,7 +321,7 @@ body.opened #btnMusic{display:flex}
       <h2 class="sec-title serif">Dua Daun Shoji, Satu Taman</h2>
       <p class="sec-sub">Pengantin putri &amp; putra di balik panel shoji yang menyatu</p>
     </div>
-    <svg class="cross-branch" viewBox="0 0 380 54" preserveAspectRatio="none" aria-hidden="true"><path d="M-4 8 Q120 52 200 30 Q280 10 384 44" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="70" cy="30" r="10"/><circle cx="150" cy="38" r="12"/><circle cx="235" cy="24" r="10"/><circle cx="315" cy="30" r="11"/></g><circle cx="150" cy="38" r="4.5" fill="#c93e4e"/></svg>
+    <img class="cross-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="" aria-hidden="true">
     <div class="shoji-couple">
       <div class="shoji-door rv rv-left">
         <div class="frame-wood"><img src="assets/undangya/sakura-hana/bride.webp" alt="Mempelai wanita, Meyzsa Putri Ananda, mengenakan kimono pengantin putih-pink dengan hiasan rambut kanzashi bunga sakura di taman sakura"></div>
@@ -322,13 +338,13 @@ body.opened #btnMusic{display:flex}
         <a class="ig-btn" href="https://instagram.com/fahrezzi.contoh" target="_blank" rel="noopener">@fahrezzi.contoh</a>
       </div>
     </div>
-    <div class="rv rv-clip" style="margin-top:22px">
-      <div class="frame-wood" style="height:320px"><img src="assets/undangya/sakura-hana/hero.webp" alt="Meyzsa dan Fahrezzi berdiri berdampingan di bawah pohon sakura dengan jembatan merah di belakang mereka"></div>
+    <div class="rv rv-zoom" style="margin-top:22px">
+      <div class="frame-wood hero-frame" style="height:320px"><img src="assets/undangya/sakura-hana/hero.webp" alt="Meyzsa dan Fahrezzi berdiri berdampingan di bawah pohon sakura dengan jembatan merah di belakang mereka"></div>
       <div style="text-align:center"><p class="gal-cap">Di bawah pohon sakura, tempat kisah kami bermekaran.</p></div>
     </div>
   </section>
 
-  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 02</span><svg viewBox="0 0 180 46"><path d="M2 22 Q110 6 178 40" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="38" cy="20" r="10"/><circle cx="70" cy="14" r="9"/><circle cx="104" cy="16" r="11"/><circle cx="130" cy="24" r="9"/></g><circle cx="104" cy="16" r="4" fill="#c93e4e"/></svg></div>
+  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 02</span><img class="bd-branch" style="transform:scaleX(-1)" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""></div>
 
   <section id="kisah">
     <div class="sec-head rv rv-left shoji-head">
@@ -356,7 +372,7 @@ body.opened #btnMusic{display:flex}
     <p class="demo-note demo-pill rv rv-up">Linimasa &amp; teks kisah di atas adalah contoh untuk tampilan tema.</p>
   </section>
 
-  <div class="branch-divider from-left" aria-hidden="true"><svg viewBox="0 0 180 46"><path d="M2 40 Q70 6 178 22" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="52" cy="22" r="9"/><circle cx="78" cy="14" r="11"/><circle cx="112" cy="16" r="9"/><circle cx="142" cy="20" r="10"/></g><circle cx="78" cy="14" r="4" fill="#c93e4e"/></svg><span class="bd-label">HANAMI · 03</span></div>
+  <div class="branch-divider from-left" aria-hidden="true"><img class="bd-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""><span class="bd-label">HANAMI · 03</span></div>
 
   <section id="acara">
     <div class="sec-head rv rv-zoom shoji-head">
@@ -371,7 +387,7 @@ body.opened #btnMusic{display:flex}
       <div class="cd-medal"><div class="cd-ring"><i></i><i></i><i></i><i></i><i></i></div><i class="cd-breath"></i><b id="cdS">0</b><span>Detik</span></div>
     </div>
     <p class="demo-note demo-pill rv rv-up" style="margin:0 auto 26px;max-width:280px">Sabtu, 12 Juni 2027 — Jakarta</p>
-    <div class="fan-top" aria-hidden="true"></div>
+    <img class="fan-top-img sway-t" style="--sa:1.7deg;--sd:3.5s" src="assets/undangya/sakura-hana/sakura-kipas.webp" alt="" aria-hidden="true">
     <div class="card event rv rv-left">
       <h3>Akad Nikah</h3>
       <div class="when">Sabtu, 12 Juni 2027 · 08.00 – 10.00 WIB</div>
@@ -380,7 +396,7 @@ body.opened #btnMusic{display:flex}
       <a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Akad+Nikah+Meyzsa+%26+Fahrezzi&amp;dates=20270612T010000Z%2F20270612T030000Z&amp;details=Akad+Nikah+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=Masjid+Agung+Al-Azhar%2C+Kebayoran+Baru%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KE KALENDER</a>
       <button class="btn btn-alt" type="button" data-ics data-file="akad-meyzsa-fahrezzi" data-title="Akad Nikah Meyzsa &amp; Fahrezzi" data-start="20270612T010000Z" data-end="20270612T030000Z" data-loc="Masjid Agung Al-Azhar, Kebayoran Baru, Jakarta Selatan" data-desc="Akad Nikah Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
     </div>
-    <div class="fan-top" aria-hidden="true"></div>
+    <img class="fan-top-img sway-t" style="--sa:2deg;--sd:4.2s" src="assets/undangya/sakura-hana/sakura-kipas.webp" alt="" aria-hidden="true">
     <div class="card event rv rv-right">
       <h3>Resepsi</h3>
       <div class="when">Sabtu, 12 Juni 2027 · 11.00 – 13.00 WIB</div>
@@ -390,7 +406,7 @@ body.opened #btnMusic{display:flex}
       <button class="btn btn-alt" type="button" data-ics data-file="resepsi-meyzsa-fahrezzi" data-title="Resepsi Meyzsa &amp; Fahrezzi" data-start="20270612T040000Z" data-end="20270612T060000Z" data-loc="The Ritz-Carlton Jakarta, Pacific Place, Jakarta Selatan" data-desc="Resepsi Pernikahan Meyzsa Putri Ananda &amp; Ahmad Fahrezzi Pratama">UNDUH .ICS</button>
     </div>
     <div class="card rv rv-zoom" style="margin-top:8px;text-align:center">
-      <img src="assets/undangya/sakura-hana/sh-kipas-sensu.webp" alt="" style="width:110px;margin:0 auto 6px">
+      <img src="assets/undangya/sakura-hana/sakura-kipas.webp" alt="" style="width:130px;margin:0 auto 6px">
       <h3 class="sub-h" style="margin-top:0">Dresscode Tamu</h3>
       <p class="sub-sub">Berkenan hadir dengan nuansa warna berikut</p>
       <div class="dc-chips"><span class="dc-chip"><span class="dc-dot" style="background:#F2A7C3"></span>Pink Sakura</span><span class="dc-chip"><span class="dc-dot" style="background:#FFF6F1"></span>Putih Lembut</span><span class="dc-chip"><span class="dc-dot" style="background:#C0392B"></span>Merah Torii</span><span class="dc-chip"><span class="dc-dot" style="background:#7A9A68"></span>Hijau Lumut</span><span class="dc-chip"><span class="dc-dot" style="background:#8A5A3B"></span>Cokelat Kayu</span><span class="dc-chip"><span class="dc-dot" style="background:#B9D2E8"></span>Biru Langit Pucat</span></div>
@@ -410,10 +426,10 @@ body.opened #btnMusic{display:flex}
       <p>Patokan: berada di kawasan SCBD, terhubung dengan Pacific Place Mall; masuk melalui lobi utama hotel. Tamu disarankan tiba ±30 menit lebih awal.</p>
       <div class="btn-row"><a class="btn" href="https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Pacific+Place" target="_blank" rel="noopener">BUKA PETA</a><a class="btn btn-alt" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Resepsi+Meyzsa+%26+Fahrezzi&amp;dates=20270612T040000Z%2F20270612T060000Z&amp;details=Resepsi+Pernikahan+Meyzsa+Putri+Ananda+%26+Ahmad+Fahrezzi+Pratama&amp;location=The+Ritz-Carlton+Jakarta%2C+Pacific+Place%2C+Jakarta+Selatan" target="_blank" rel="noopener">SIMPAN KE KALENDER</a></div>
     </div>
-    <img class="orn sway-t" style="--sa:2.2deg;--sd:8.6s;left:-14px;bottom:4px;width:70px" src="assets/undangya/sakura-hana/bambu.webp" alt="">
+    <img class="orn sway-t" style="--sa:2.2deg;--sd:3.9s;left:-14px;bottom:4px;width:70px" src="assets/undangya/sakura-hana/bambu.webp" alt="">
   </section>
 
-  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 04</span><svg viewBox="0 0 180 46"><path d="M2 22 Q110 6 178 40" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="38" cy="20" r="10"/><circle cx="70" cy="14" r="9"/><circle cx="104" cy="16" r="11"/><circle cx="130" cy="24" r="9"/></g><circle cx="104" cy="16" r="4" fill="#c93e4e"/></svg></div>
+  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 04</span><img class="bd-branch" style="transform:scaleX(-1)" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""></div>
 
   <section id="galeri">
     <div class="sec-head rv rv-rot-r shoji-head">
@@ -426,7 +442,7 @@ body.opened #btnMusic{display:flex}
     <div class="emaki-wrap">
       <img class="emaki-rod left" src="assets/undangya/sakura-hana/sh-batang-bambu.webp" alt="">
       <img class="emaki-rod right" src="assets/undangya/sakura-hana/sh-batang-bambu.webp" alt="">
-      <svg class="emaki-branch" viewBox="0 0 380 30" preserveAspectRatio="none" aria-hidden="true"><path d="M0 22 Q120 2 380 18" stroke="#5b3a26" stroke-width="4" fill="none"/><g fill="#e77a9b"><circle cx="60" cy="14" r="7"/><circle cx="170" cy="8" r="8"/><circle cx="290" cy="12" r="7"/></g></svg>
+      <img class="emaki-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt="" aria-hidden="true">
       <div class="emaki-rail" id="railEmaki">
         <div class="emaki-slide rv rv-up"><span class="bab-chip">Bab Kelopak 1</span><div class="ph"><img class="gal-photo" src="assets/undangya/sakura-hana/galeri-1.webp" alt="Pasangan di bawah pohon sakura besar berbunga lebat" loading="lazy"></div><figcaption class="gal-cap">Bawah Pohon Sakura</figcaption></div>
         <div class="emaki-slide rv rv-up"><span class="bab-chip">Bab Kelopak 2</span><div class="ph"><img class="gal-photo" src="assets/undangya/sakura-hana/galeri-2.webp" alt="Pasangan bergandengan di atas jembatan merah melengkung" loading="lazy"></div><figcaption class="gal-cap">Jembatan Merah</figcaption></div>
@@ -441,7 +457,7 @@ body.opened #btnMusic{display:flex}
     <div class="rail-meta"><span class="rail-frac" id="fracEmaki">1 / 8</span><span class="rail-dots" id="dotsEmaki"></span></div>
   </section>
 
-  <div class="branch-divider from-left" aria-hidden="true"><svg viewBox="0 0 180 46"><path d="M2 40 Q70 6 178 22" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="52" cy="22" r="9"/><circle cx="78" cy="14" r="11"/><circle cx="112" cy="16" r="9"/><circle cx="142" cy="20" r="10"/></g><circle cx="78" cy="14" r="4" fill="#c93e4e"/></svg><span class="bd-label">HANAMI · 05</span></div>
+  <div class="branch-divider from-left" aria-hidden="true"><img class="bd-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""><span class="bd-label">HANAMI · 05</span></div>
 
   <section id="cuplikan">
     <div class="sec-head rv rv-drop shoji-head">
@@ -450,7 +466,7 @@ body.opened #btnMusic{display:flex}
       <h2 class="sec-title serif">Cuplikan di Taman Sakura</h2>
       <p class="sec-sub">Sepotong kisah kami dalam bingkai bergerak</p>
     </div>
-    <img class="orn sway-g" style="--sa:3deg;--sd:7.8s;right:6px;top:120px;width:44px" src="assets/undangya/sakura-hana/sh-lentera-taman.webp" alt="">
+    <img class="orn sway-g" style="--sa:3deg;--sd:3.2s;right:6px;top:120px;width:52px" src="assets/undangya/sakura-hana/sakura-lentera-gantung.webp" alt="">
     <div class="rv rv-zoom" style="border:3px solid var(--wood);border-radius:14px;padding:6px;background:#fff;box-shadow:0 16px 34px rgba(62,42,32,.3)">
       <div class="vid-wrap" id="vidWrap"><div class="vid-stage" style="border-radius:9px">
         <video id="teaserVideo" src="assets/undangya/sakura-hana/teaser.mp4" poster="assets/undangya/sakura-hana/teaser-poster.webp" preload="none" playsinline controls aria-label="Video teaser Meyzsa dan Fahrezzi"></video>
@@ -490,7 +506,7 @@ body.opened #btnMusic{display:flex}
     </div>
   </section>
 
-  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 06</span><svg viewBox="0 0 180 46"><path d="M2 22 Q110 6 178 40" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="38" cy="20" r="10"/><circle cx="70" cy="14" r="9"/><circle cx="104" cy="16" r="11"/><circle cx="130" cy="24" r="9"/></g><circle cx="104" cy="16" r="4" fill="#c93e4e"/></svg></div>
+  <div class="branch-divider from-right" aria-hidden="true"><span class="bd-label">HANAMI · 06</span><img class="bd-branch" style="transform:scaleX(-1)" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""></div>
 
   <section id="rsvp">
     <div class="sec-head rv rv-right shoji-head">
@@ -533,10 +549,10 @@ body.opened #btnMusic{display:flex}
       <p class="demo-note">Fitur demo pada contoh undangan ini — data check-in tersimpan hanya di perangkat Anda.</p>
       <div class="gb-list" id="ciList" aria-live="polite"></div>
     </div>
-    <img class="orn sway-t" style="--sa:2.3deg;--sd:8.2s;right:-12px;bottom:10px;width:64px" src="assets/undangya/sakura-hana/bambu.webp" alt="">
+    <img class="orn sway-t" style="--sa:2.3deg;--sd:4.4s;right:-12px;bottom:10px;width:64px" src="assets/undangya/sakura-hana/bambu.webp" alt="">
   </section>
 
-  <div class="branch-divider from-left" aria-hidden="true"><svg viewBox="0 0 180 46"><path d="M2 40 Q70 6 178 22" stroke="#5b3a26" stroke-width="5" fill="none" stroke-linecap="round"/><g fill="#e77a9b"><circle cx="52" cy="22" r="9"/><circle cx="78" cy="14" r="11"/><circle cx="112" cy="16" r="9"/><circle cx="142" cy="20" r="10"/></g><circle cx="78" cy="14" r="4" fill="#c93e4e"/></svg><span class="bd-label">HANAMI · 07</span></div>
+  <div class="branch-divider from-left" aria-hidden="true"><img class="bd-branch" src="assets/undangya/sakura-hana/ranting-sakura.webp" alt=""><span class="bd-label">HANAMI · 07</span></div>
 
   <section id="amplop">
     <div class="sec-head rv rv-up shoji-head">
@@ -577,7 +593,7 @@ body.opened #btnMusic{display:flex}
       <div class="card turut-card rv rv-right"><h4>Keluarga Mempelai Pria</h4><p>Keluarga Besar Sutrisno — Jakarta<br>Keluarga Besar Dewi — Tangerang<br>Beserta segenap kerabat &amp; handai tolan</p></div>
     </div>
     <p class="demo-note demo-pill rv rv-up">Susunan keluarga di atas adalah contoh untuk tampilan tema.</p>
-    <img class="orn sway-t" style="--sa:2deg;--sd:9s;left:-10px;bottom:2px;width:72px" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
+    <img class="orn sway-t" style="--sa:2deg;--sd:5.1s;left:-10px;bottom:2px;width:72px" src="assets/undangya/sakura-hana/pohon-sakura-mini.webp" alt="">
   </section>
 
   <section id="penutup" style="text-align:center">
